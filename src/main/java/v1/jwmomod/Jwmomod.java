@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import v1.jwmomod.item.ModItemGroups;
 import v1.jwmomod.item.ModItems;
 
 public class Jwmomod implements ModInitializer {
@@ -20,5 +21,6 @@ public class Jwmomod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
+		ModItemGroups.registerModItemGroups();
 	}
 }

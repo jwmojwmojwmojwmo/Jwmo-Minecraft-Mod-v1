@@ -6,12 +6,13 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import v1.jwmomod.Jwmomod;
+import v1.jwmomod.item.custom.JwmoMinerItem;
 
 import java.util.function.Function;
 
 public class ModItems {
     public static final Item jwmofood = registerItem("jwmofood", Item::new, new Item.Settings().food(ModFoodComponents.jwmofood, ModConsumableComponents.jwmofood));
-    public static final Item jwmominer = registerItem("jwmominer", Item::new, new Item.Settings());
+    public static final Item jwmominer = registerItem("jwmominer", JwmoMinerItem::new, new Item.Settings().maxDamage(100));
 
     public static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registerItemKey =RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Jwmomod.MOD_ID, name));
