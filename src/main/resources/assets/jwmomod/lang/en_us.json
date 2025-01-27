@@ -2,5 +2,6 @@
   "item.jwmomod.jwmofood": "jwmo's food",
   "itemgroup.jwmomod.jwmoitemgroup": "jwmo's item group",
   "item.jwmomod.jwmominer": "jwmo's miner",
-  "block.jwmomod.jwmoblock": "jwmo's block"
+  "block.jwmomod.jwmoblock": "jwmo's block",
+  "block.jwmomod.jwmowolftransformer": "jwmo's wolf transformer"
 }

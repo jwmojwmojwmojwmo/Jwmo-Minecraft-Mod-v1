@@ -8,11 +8,13 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import v1.jwmomod.Jwmomod;
+import v1.jwmomod.block.custom.JwmoWolfTransformerBlock;
 
 import java.util.function.Function;
 
 public class ModBlocks {
     public static final Block jwmoblock = registerBlock("jwmoblock", Block::new, AbstractBlock.Settings.create().hardness(0.5f).resistance(1000f), true);
+    public static final Block jwmowolftransformer = registerBlock("jwmowolftransformer", JwmoWolfTransformerBlock::new, AbstractBlock.Settings.create().hardness(2f).resistance(50f),true);
 
     public static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> factory, Block.Settings settings, boolean registerBlockItem) {
         final RegistryKey<Block> registerBlockKey = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Jwmomod.MOD_ID, name));

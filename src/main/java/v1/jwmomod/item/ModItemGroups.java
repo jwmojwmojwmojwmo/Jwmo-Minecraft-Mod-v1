@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.jwmofood);
                         entries.add(ModItems.jwmominer);
                         entries.add(ModBlocks.jwmoblock);
+                        entries.add(ModBlocks.jwmowolftransformer);
                     }).build());
 
     public static void registerModItemGroups() {
