@@ -2,6 +2,8 @@ package v1.jwmomod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
+import net.minecraft.item.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import v1.jwmomod.block.ModBlocks;

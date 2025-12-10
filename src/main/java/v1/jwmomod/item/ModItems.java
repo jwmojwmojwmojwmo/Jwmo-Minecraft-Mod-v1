@@ -14,8 +14,10 @@ public class ModItems {
     public static final Item jwmofood = registerItem("jwmofood", Item::new, new Item.Settings().food(ModFoodComponents.jwmofood, ModConsumableComponents.jwmofood));
     public static final Item jwmominer = registerItem("jwmominer", JwmoMinerItem::new, new Item.Settings().maxDamage(100));
 
+    public static final Item jwmofuel = registerItem("jwmofuel", Item::new, new Item.Settings());
+
     public static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
-        final RegistryKey<Item> registerItemKey =RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Jwmomod.MOD_ID, name));
+        final RegistryKey<Item> registerItemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Jwmomod.MOD_ID, name));
         return Items.register(registerItemKey, factory, settings);
     }
 
